@@ -22,9 +22,8 @@ def download_youtube_video(url, output_path):
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    output_path = os.path.expanduser("~/Downloads")
     # for testing
-    # default_url = "https://youtu.be/3e1_XdqN3jg?si=TR8fYAeKcuEjueAf"
+    # default_url = "https://youtu.be/wf0D82bBsJY"
     # url = input(f"Enter the YouTube video URL: ") or default_url
     url = input(f"Enter the YouTube video URL: ")
-    download_youtube_video(url, output_path)
+    download_youtube_video(url, os.path.expanduser("~/Downloads"))
